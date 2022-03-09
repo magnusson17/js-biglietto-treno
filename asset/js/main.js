@@ -26,7 +26,7 @@ totPriceRounded = Math.round((totPrice + Number.EPSILON) * 100) / 100;
 if (isNaN(kmQuery) || isNaN(ageQuery)) {
     mainContainer.innerHTML = `<p>ERRORE, ricaricare la pagina e inserire correttamente i dati</p>`
 } else {
-    mainContainer.innerHTML = `<p>Sono ${totPriceRounded} euro</p>`
+    mainContainer.innerHTML = `<p>Prezzo biglietto: ${totPriceRounded} &euro;</p>`
 }
 
 
