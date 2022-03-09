@@ -21,6 +21,6 @@ if (ageQuery < 18) {
 totPriceRounded = Math.round((totPrice + Number.EPSILON) * 100) / 100;
 
 let mainContainer = document.getElementById("main-container");
-mainContainer.innerHTML = `sono ${totPriceRounded} euro`
+mainContainer.innerHTML = `<h3>sono ${totPriceRounded} euro</h3>`
 
 
