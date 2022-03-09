@@ -1,3 +1,5 @@
+let mainContainer = document.getElementById("main-container");
+
 let kmQuery = prompt("Benvenuto sul sito, inserisca quanti kilometri deve percorrere:");
 let ageQuery = prompt("Inserisca la sua età in anni:");
 
@@ -20,7 +22,11 @@ if (ageQuery < 18) {
 //arrotondo totPrice a 2 cifre decimali
 totPriceRounded = Math.round((totPrice + Number.EPSILON) * 100) / 100;
 
-let mainContainer = document.getElementById("main-container");
-mainContainer.innerHTML = `<h3>sono ${totPriceRounded} euro</h3>`
+//risultato finale
+if (isNaN(kmQuery) || isNaN(ageQuery)) {
+    mainContainer.innerHTML = `<p>ERRORE, ricaricare la pagina e inserire correttamente i dati</p>`
+} else {
+    mainContainer.innerHTML = `<p>Sono ${totPriceRounded} euro</p>`
+}
 
 

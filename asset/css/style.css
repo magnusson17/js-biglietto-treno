@@ -22,8 +22,8 @@
 #main-container {
     display: flex;
     align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
-    height: 100px;
+    padding: 30px;
+    color: white;
 }
